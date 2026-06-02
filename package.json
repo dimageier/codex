@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "bundle": "bash scripts/bundle-deploy-assets.sh",
     "build:pages": "GITHUB_PAGES=true npm run build",
     "lint": "eslint .",
     "preview": "vite preview"

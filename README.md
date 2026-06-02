@@ -1,5 +1,7 @@
 # CODEX Album Website
 
+**Status: complete** (June 2026)
+
 Futuristic microsite for **Codex** by Dimitri Geier.
 
 **Live site:** https://dg-create.com/codex/ (proxied from [GitHub Pages](https://dimageier.github.io/codex/))

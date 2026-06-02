@@ -1,4 +1,5 @@
 import { videosBySlug } from "@/data/videos";
+import { assetUrl } from "@/lib/assetUrl";
 
 interface VideoStripProps {
   slug: string;
@@ -15,7 +16,7 @@ export function VideoStrip({ slug }: VideoStripProps) {
       </p>
       <div className="track-rail flex gap-3 overflow-x-auto pb-2">
         {files.map((file) => {
-          const src = `/videos/${slug}/${file}`;
+          const src = assetUrl(`/videos/${slug}/${file}`);
           return (
             <video
               key={src}

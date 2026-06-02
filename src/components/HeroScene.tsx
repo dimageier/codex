@@ -3,6 +3,7 @@ import * as THREE from "three";
 import { motion } from "framer-motion";
 import { ParticleField } from "./ParticleField";
 import { album } from "@/data/tracks";
+import { assetUrl } from "@/lib/assetUrl";
 
 export function HeroScene() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -84,7 +85,7 @@ export function HeroScene() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <motion.img
-          src="/cover.jpg"
+          src={assetUrl("/cover.jpg")}
           alt="Codex album cover"
           className="mx-auto mb-8 h-48 w-48 rounded-sm object-cover shadow-[0_0_80px_rgba(201,169,98,0.35)] md:h-56 md:w-56"
           initial={{ opacity: 0, scale: 0.92 }}

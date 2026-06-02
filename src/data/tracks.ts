@@ -1,3 +1,5 @@
+import { assetUrl } from "@/lib/assetUrl";
+
 export interface Track {
   id: number;
   slug: string;
@@ -22,7 +24,7 @@ export const album = {
     "https://open.spotify.com/album/1LdnuUwln9Whj8bOUtPUc3",
 };
 
-export const tracks: Track[] = [
+const rawTracks: Track[] = [
   {
     id: 1,
     slug: "corona",
@@ -170,3 +172,9 @@ export const tracks: Track[] = [
     previewAudio: "/audio/previews/track-12.mp3",
   },
 ];
+
+export const tracks: Track[] = rawTracks.map((t) => ({
+  ...t,
+  heroImage: assetUrl(t.heroImage),
+  previewAudio: assetUrl(t.previewAudio),
+}));

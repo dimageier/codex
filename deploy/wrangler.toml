@@ -1,0 +1,17 @@
+name = "dg-create-codex-proxy"
+main = "codex-proxy-worker.js"
+compatibility_date = "2024-08-01"
+
+# After `wrangler deploy`, attach these routes in Cloudflare (zone: dg-create.com):
+#   dg-create.com/codex
+#   dg-create.com/codex/*
+#   www.dg-create.com/codex
+#   www.dg-create.com/codex/*
+#
+# Or uncomment when your account owns the zone (requires CLOUDFLARE_API_TOKEN):
+# routes = [
+#   { pattern = "dg-create.com/codex", zone_name = "dg-create.com" },
+#   { pattern = "dg-create.com/codex/*", zone_name = "dg-create.com" },
+#   { pattern = "www.dg-create.com/codex", zone_name = "dg-create.com" },
+#   { pattern = "www.dg-create.com/codex/*", zone_name = "dg-create.com" },
+# ]

@@ -5,6 +5,11 @@ import path from "path";
 
 export default defineConfig({
   base: process.env.GITHUB_PAGES === "true" ? "/codex/" : "/",
+  define: {
+    "import.meta.env.VITE_SITE_ORIGIN": JSON.stringify(
+      process.env.VITE_SITE_ORIGIN ?? "https://dg-create.com",
+    ),
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

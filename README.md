@@ -2,7 +2,9 @@
 
 Futuristic microsite for **Codex** by Dimitri Geier.
 
-**Live site:** https://dimageier.github.io/codex/
+**Live site:** https://dg-create.com/codex/ (proxied from [GitHub Pages](https://dimageier.github.io/codex/))
+
+Custom domain setup: [deploy/CUSTOM_DOMAIN.md](deploy/CUSTOM_DOMAIN.md)
 
 - [Apple Music](https://music.apple.com/us/album/codex/6775315893)
 - [Spotify](https://open.spotify.com/album/1LdnuUwln9Whj8bOUtPUc3)

@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "bundle": "bash scripts/bundle-deploy-assets.sh",
     "build:pages": "GITHUB_PAGES=true npm run build",
+    "deploy:worker": "wrangler deploy --config deploy/wrangler.toml",
     "lint": "eslint .",
     "preview": "vite preview"
   },
